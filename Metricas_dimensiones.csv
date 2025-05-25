@@ -1,0 +1,77 @@
+﻿Origen,Nombre,Nombre_API,Tipo,Formato,Definicion
+User Group,User Type,ga:userType,Dimension,String,"A boolean, either New Visitor or Returning Visitor, indicating if the users are new or returning."
+User Group,Count of Sessions,ga:sessionCount,Dimension,String,"The session index for a user. Each session from a unique user will get its own incremental index starting from 1 for the first session. Subsequent sessions do not change previous session indices. For example, if a user has 4 sessions to the website, sessionCount for that user will have 4 distinct values of '1' through '4'."
+User Group,Days Since Last Session,ga:daysSinceLastSession,Dimension,String,"The number of days elapsed since users last visited the property, used to calculate user loyalty."
+User Group,User Defined Value,ga:userDefinedValue,Dimension,String,The value provided when defining custom user segments for the property.
+User Group,User Bucket,ga:userBucket,Dimension,String,Randomly assigned users tag to allow A/B testing and splitting of remarketing lists. Ranges from 1-100.
+User Group,Count of Sessions,ga:visitCount,Dimension,String,"DEPRECATED The session index for a user. Each session from a unique user will get its own incremental index starting from 1 for the first session. Subsequent sessions do not change previous session indices. For example, if a user has 4 sessions to the website, sessionCount for that user will have 4 distinct values of '1' through '4'."
+User Group,Users,ga:users,Metrica,Integer,The total number of users for the requested time period.
+User Group,New Users,ga:newUsers,Metrica,Integer,The number of sessions marked as a user's first sessions.
+User Group,% New Sessions,ga:percentNewSessions,Metrica,Percent,The percentage of sessions by users who had never visited the property before.
+User Group,1 Day Active Users,ga:1dayUsers,Metrica,Integer,"Total number of 1-day active users for each day in the requested time period. At least one of ga:nthDay, ga:date, or ga:day must be specified as a dimension to query this metric. For a given date, the returned value will be the total number of unique users for the 1-day period ending on the given date."
+User Group,7 Day Active Users,ga:7dayUsers,Metrica,Integer,"Total number of 7-day active users for each day in the requested time period. At least one of ga:nthDay, ga:date, or ga:day must be specified as a dimension to query this metric. For a given date, the returned value will be the total number of unique users for the 7-day period ending on the given date."
+User Group,14 Day Active Users,ga:14dayUsers,Metrica,Integer,"Total number of 14-day active users for each day in the requested time period. At least one of ga:nthDay, ga:date, or ga:day must be specified as a dimension to query this metric. For a given date, the returned value will be the total number of unique users for the 14-day period ending on the given date."
+User Group,28 Day Active Users,ga:28dayUsers,Metrica,Integer,"Total number of 28-day active users for each day in the requested time period. At least one of ga:nthDay, ga:date, or ga:day must be specified as a dimension to query this metric. For a given date, the returned value will be the total number of unique users for the 28-day period ending on the given date."
+User Group,30 Day Active Users,ga:30dayUsers,Metrica,Integer,"Total number of 30-day active users for each day in the requested time period. At least one of ga:nthDay, ga:date, or ga:day must be specified as a dimension to query this metric. For a given date, the returned value will be the total number of unique users for the 30-day period ending on the given date."
+User Group,Number of Sessions per User,ga:sessionsPerUser,Metrica,Float,The total number of sessions divided by the total number of users.
+Session Group,Session group,ga:sessionDurationBucket,Dimension,String,The length (returned as a string) of a session measured in seconds and reported in second increments.
+Session Group,Session,ga:sessions,Metrica,Integer,The total number of sessions.
+Session Group,Bounces,ga:bounces,Metrica,Percent,The total number of single page (or single interaction hit) sessions for the property.
+Session Group,Bounce Rate,ga:bounceRate,Metrica,Percent,"The percentage of single-page session (i.e., session in which the person left the property from the first page)."
+Session Group,Session Duration,ga:sessionDuration,Metrica,Time,Total duration (in seconds) of users' sessions.
+Session Group,Avg. Session Duration,ga:avgSessionDuration,Metrica,Time,The average duration (in seconds) of users' sessions.
+Session Group,Unique Dimension Combinations,ga:uniqueDimensionCombinations,Metrica,Integer,"Unique Dimension Combinations counts the number of unique dimension-value combinations for each dimension in a report. This lets you build combined (concatenated) dimensions post-processing, which allows for more flexible reporting without having to update your tracking implementation or use additional custom-dimension slots. For more information, see https://support.google.com/analytics/answer/7084499."
+Session Group,Hits,ga:hits,Metrica,Integer,"Total number of hits for the view (profile). This metric sums all hit types, including pageview, custom event, ecommerce, and other types. Because this metric is based on the view (profile), not on the property, it is not the same as the property's hit volume"
+Platform or Device group,Browser,ga:browser,Dimension,String,"The name of users' browsers, for example, Internet Explorer or Firefox."
+Platform or Device group,Browser Version,ga:browserVersion,Dimension,String,"The version of users' browsers, for example, 2.0.0.14."
+Platform or Device group,Operating System,ga:operatingSystem,Dimension,String,"Users' operating system, for example, Windows, Linux, Macintosh, or iOS."
+Platform or Device group,Operating System Version,ga:operatingSystemVersion,Dimension,String,"The version of users' operating system, i.e., XP for Windows, PPC for Macintosh."
+Platform or Device group,Mobile Device Branding,ga:mobileDeviceBranding,Dimension,String,Mobile manufacturer or branded name.
+Platform or Device group,Mobile Device Model,ga:mobileDeviceModel,Dimension,String,Mobile device model.
+Platform or Device group,Mobile Input Selector,ga:mobileInputSelector,Dimension,String,"Selector (e.g., touchscreen, joystick, clickwheel, stylus) used on the mobile device."
+Platform or Device group,Mobile Device Info,ga:mobileDeviceInfo,Dimension,String,"The branding, model, and marketing name used to identify the mobile device."
+Platform or Device group,Device Category,ga:deviceCategory,Dimension,String,"The type of device: desktop, tablet, or mobile."
+Platform or Device group,Browser Size,ga:browserSize,Dimension,String,"The viewport size of users' browsers. A session-scoped dimension, browser size captures the initial dimensions of the viewport in pixels and is formatted as width x height, for example, 1920x960."
+Platform or Device group,Data Source,ga:dataSource,Dimension,String,"The data source of a hit. By default, hits sent from analytics.js are reported as ""web"" and hits sent from the mobile SDKs are reported as ""app"". These values can be overridden in the Measurement Protocol."
+Geo Network Group,Continent,ga:continent,Dimension,String,"Users' continent, derived from users' IP addresses or Geographical IDs."
+Geo Network Group,Sub Continent,ga:subContinent,Dimension,String,"Users' sub-continent, derived from their IP addresses or Geographical IDs. For example, Polynesia or Northern Europe."
+Geo Network Group,Country,ga:country,Dimension,String,"Users' country, derived from their IP addresses or Geographical IDs."
+Geo Network Group,Region,ga:region,Dimension,String,"Users' region, derived from their IP addresses or Geographical IDs. In U.S., a region is a state, New York, for example."
+Geo Network Group,Metro,ga:metro,Dimension,String,The Designated Market Area (DMA) from where traffic arrived.
+Geo Network Group,City,ga:city,Dimension,String,"Users' city, derived from their IP addresses or Geographical IDs."
+Geo Network Group,Latitude,ga:latitude,Dimension,String,"The approximate latitude of users' city, derived from their IP addresses or Geographical IDs. Locations north of the equator have positive latitudes and locations south of the equator have negative latitudes."
+Geo Network Group,Longitude,ga:longitude,Dimension,String,"The approximate longitude of users' city, derived from their IP addresses or Geographical IDs. Locations east of the prime meridian have positive longitudes and locations west of the prime meridian have negative longitudes."
+Geo Network Group,Network Domain,ga:networkDomain,Dimension,String,"The domain name of users' ISP, derived from the domain name registered to the ISP's IP address."
+Geo Network Group,Service Provider,ga:networkLocation,Dimension,String,"The names of the service providers used to reach the property. For example, if most users of the website come via the major cable internet service providers, its value will be these service providers' names."
+System,Flash Version,ga:flashVersion,Dimension,String,"The version of Flash, including minor versions, supported by users' browsers."
+System,Java Support,ga:javaEnabled,Dimension,String,"A boolean, either Yes or No, indicating whether Java is enabled in users' browsers."
+System,Language,ga:language,Dimension,String,"The language, in ISO-639 code format (e.g., en-gb for British English), provided by the HTTP Request for the browser."
+System,Screen Colors,ga:screenColors,Dimension,String,"The color depth of users' monitors, retrieved from the DOM of users' browsers. For example, 4-bit, 8-bit, 24-bit, or undefined-bit."
+System,Source Porperty Display Name,ga:sourcePropertyDisplayName,Dimension,String,Source property display name of roll-up properties. This is valid for only roll-up properties.
+System,Screen Resolution,ga:screenResolution,Dimension,String,"Resolution of users' screens, for example, 1024x738"
+Page Tracking Group,Hostname,ga:hostname,Dimension,String,The hostname from which the tracking request was made.
+Page Tracking Group,Page,ga:pagePath,Dimension,String,A page on the website specified by path and/or query parameters. Use this with hostname to get the page's full URL.
+Page Tracking Group,Page path level 1,ga:pagePathLevel1,Dimension,String,This dimension rolls up all the page paths in the first hierarchical level in pagePath.
+Page Tracking Group,Page Title,ga:pageTitle,Dimension,String,The page's title. Multiple pages might have the same page title.
+Page Tracking Group,Landing Page,ga:landingPagePath,Dimension,String,"The first page in users' sessions, or the landing page."
+Page Tracking Group,Second Page,ga:secondPagePath,Dimension,String,The second page in users' sessions.
+Page Tracking Group,Exit Page,ga:exitPagePath,Dimension,String,The last page or exit page in users' sessions.
+Page Tracking Group,Previous Page Path,ga:previousPagePath,Dimension,String,"A page visited before another page on the same property, typically used with the pagePath dimension."
+Page Tracking Group,Page Depth,ga:pageDepth,Dimension,String,"The number of pages visited by users during a session. The value is a histogram that counts pageviews across a range of possible values. In this calculation, all sessions will have at least one pageview, and some percentage of sessions will have more."
+Page Tracking Group,Page Value,ga:pageValue,Metrica,Currency,"The average value of this page or set of pages, which is equal to (ga:transactionRevenue + ga:goalValueAll) / ga:uniquePageviews."
+Page Tracking Group,Entrances,ga:entrances,Metrica,Integer,"The number of entrances to the property measured as the first pageview in a session, typically used with landingPagePath."
+Page Tracking Group,Pageviews,ga:pageviews,Metrica,Integer,The total number of pageviews for the property.
+Page Tracking Group,Unique Pageviews,ga:uniquePageviews,Metrica,Integer,Unique Pageviews is the number of sessions during which the specified page was viewed at least once. A unique pageview is counted for each page URL + page title combination.
+Page Tracking Group,Time on Page,ga:timeOnPage,Metrica,Time,"Time (in seconds) users spent on a particular page, calculated by subtracting the initial view time for a particular page from the initial view time for a subsequent page. This metric does not apply to exit pages of the property."
+Page Tracking Group,Exits,ga:exits,Metrica,Integer,The number of exits from the property.
+Site Speed,Page Load Time (ms),ga:pageLoadTime,Metrica,Integer,"Total time (in milliseconds), from pageview initiation (e.g., a click on a page link) to page load completion in the browser, the pages in the sample set take to load."
+Site Speed,Domain Lookup Time (ms),ga:domainLookupTime,Metrica,Integer,The total time (in milliseconds) all samples spent in DNS lookup for this page.
+Site Speed,Page Download Time (ms),ga:pageDownloadTime,Metrica,Integer,The total time (in milliseconds) to download this page among all samples.
+Site Speed,Redirection Time (ms),ga:redirectionTime,Metrica,Integer,"The total time (in milliseconds) all samples spent in redirects before fetching this page. If there are no redirects, this is 0."
+Site Speed,Server Connection Time (ms),ga:serverConnectionTime,Metrica,Integer,Total time (in milliseconds) all samples spent in establishing a TCP connection to this page.
+Site Speed,Server Response Time (ms),ga:serverResponseTime,Metrica,Integer,The total time (in milliseconds) the site's server takes to respond to users' requests among all samples; this includes the network time from users' locations to the server.
+Audience Group,Age,ga:userAgeBracket,Dimension,String,Age bracket of users.
+Audience Group,Gender,ga:userGender,Dimension,String,Gender of users.
+Audience Group,Other Category,ga:interestOtherCategory,Dimension,String,"Indicates that users are more likely to be interested in learning about the specified category, and more likely to be ready to purchase."
+Audience Group,Affinity Category (reach),ga:interestAffinityCategory,Dimension,String,Indicates that users are more likely to be interested in learning about the specified category.
+Audience Group,In-Market Segment,ga:interestInMarketCategory,Dimension,String,Indicates that users are more likely to be ready to purchase products or services in the specified category.
